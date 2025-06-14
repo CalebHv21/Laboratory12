@@ -1,23 +1,9 @@
 package controller;
 
-public class MSTController
+public class DijkstraController
 {
     @javafx.fxml.FXML
-    private Text txtMessage11;
-    @javafx.fxml.FXML
-    private Pane graphPane2;
-    @javafx.fxml.FXML
-    private Text txtMessage1;
-    @javafx.fxml.FXML
-    private Pane graphPane1;
-    @javafx.fxml.FXML
-    private RadioButton listRB;
-    @javafx.fxml.FXML
-    private Text txtMessage;
-    @javafx.fxml.FXML
     private RadioButton linkedlistRB;
-    @javafx.fxml.FXML
-    private RadioButton mstRBKruskal;
     @javafx.fxml.FXML
     private Pane mainPain;
     @javafx.fxml.FXML
@@ -25,9 +11,17 @@ public class MSTController
     @javafx.fxml.FXML
     private Pane buttonPane11;
     @javafx.fxml.FXML
-    private RadioButton mstRBPrim;
+    private TableColumn tcPos;
+    @javafx.fxml.FXML
+    private TableColumn tcVertex;
+    @javafx.fxml.FXML
+    private RadioButton listRB;
     @javafx.fxml.FXML
     private RadioButton matrixRB;
+    @javafx.fxml.FXML
+    private TableColumn tcDistance;
+    @javafx.fxml.FXML
+    private Pane graphPane;
 
     @javafx.fxml.FXML
     public void initialize() {
@@ -35,14 +29,6 @@ public class MSTController
 
     @javafx.fxml.FXML
     public void randomizeOnAction(ActionEvent actionEvent) {
-    }
-
-    @javafx.fxml.FXML
-    public void kruskalOnAction(ActionEvent actionEvent) {
-    }
-
-    @javafx.fxml.FXML
-    public void primOnAction(ActionEvent actionEvent) {
     }
 
     @javafx.fxml.FXML
