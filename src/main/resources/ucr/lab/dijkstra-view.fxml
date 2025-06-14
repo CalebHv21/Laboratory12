@@ -80,7 +80,7 @@
                      </font>
                   </Label>
                   <Pane fx:id="graphPane" layoutX="532.0" layoutY="226.0" prefHeight="526.0" prefWidth="492.0" />
-                  <TableView layoutX="34.0" layoutY="226.0" prefHeight="519.0" prefWidth="366.0">
+                  <TableView fx:id="tvGraph" layoutX="34.0" layoutY="226.0" prefHeight="519.0" prefWidth="366.0">
                     <columns>
                       <TableColumn fx:id="tcPos" prefWidth="111.0" text="Position" />
                       <TableColumn fx:id="tcVertex" prefWidth="118.0" text="Vertex" />
