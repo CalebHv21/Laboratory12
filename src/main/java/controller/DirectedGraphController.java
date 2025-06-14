@@ -572,7 +572,7 @@ public class DirectedGraphController {
                 String target = namesList.get(random.nextInt(namesList.size()));
 
                 if (!source.equals(target) && !linkedListGraph.containsEdge(source, target)) {
-                    int weight = random.nextInt(1001) + 1000;
+                    int weight = util.Utility.random(101,150);
                     linkedListGraph.addEdgeWeight(source, target, weight);
                 }
             }
@@ -703,7 +703,7 @@ public class DirectedGraphController {
                 Character target = vertexList.get(random.nextInt(vertexList.size()));
 
                 if (!source.equals(target) && !adlistGraph.containsEdge(source, target)) {
-                    int weight = util.Utility.random(40) + 1;
+                    int weight = util.Utility.random(51,100);
                     adlistGraph.addEdgeWeight(source, target, weight);
                 }
             }
@@ -901,7 +901,7 @@ public class DirectedGraphController {
             circle.setStrokeWidth(3);
             stack.setScaleX(1.1);
             stack.setScaleY(1.1);
-            infoLabel.setText("Monumento: " + text);
+            infoLabel.setText("Arista: " + text);
         });
 
         stack.setOnMouseExited(e -> {
