@@ -55,7 +55,7 @@ public class HelloController {
     @FXML
     public void kruskalAndPrim(ActionEvent actionEvent) {
         try {
-            load("kruskalPrim-view.fxml");
+            load("mst-view.fxml");
             txtMessage.setText("Kruskal / Prim - Visualización");
         } catch (Exception e) {
             showCompactError("Error", "Error cargando Kruskal / Prim: " + e.getMessage());
