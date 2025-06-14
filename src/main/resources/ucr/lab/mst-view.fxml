@@ -1,0 +1,72 @@
+```xml
+        <?xml version="1.0" encoding="UTF-8"?>
+
+        <?import javafx.geometry.Insets?>
+        <?import javafx.scene.control.*?>
+        <?import javafx.scene.layout.*?>
+        <?import javafx.scene.text.Font?>
+
+<BorderPane xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MSTController">
+    <top>
+        <VBox spacing="10.0">
+            <children>
+                <Label text="Minimum Spanning Tree (Kruskal and Prim)" textAlignment="CENTER">
+                    <font>
+                        <Font name="System Bold" size="18.0" />
+                    </font>
+                </Label>
+
+                <HBox spacing="20.0" alignment="CENTER">
+                    <children>
+                        <VBox spacing="5.0">
+                            <children>
+                                <Label text="Graph Type:" />
+                                <RadioButton fx:id="rbAdjacencyMatrix" text="Adjacency Matrix" />
+                                <RadioButton fx:id="rbAdjacencyList" text="Adjacency List" />
+                                <RadioButton fx:id="rbLinkedList" text="Linked List" />
+                            </children>
+                        </VBox>
+
+                        <VBox spacing="5.0">
+                            <children>
+                                <Label text="MST Algorithm:" />
+                                <RadioButton fx:id="rbKruskal" text="Kruskal" />
+                                <RadioButton fx:id="rbPrim" text="Prim" />
+                            </children>
+                        </VBox>
+
+                        <VBox spacing="10.0">
+                            <children>
+                                <Button fx:id="btnRandomize" text="Randomize" prefWidth="100.0" />
+                                <Button fx:id="btnApplyMST" text="Apply MST" prefWidth="100.0" />
+                            </children>
+                        </VBox>
+                    </children>
+                </HBox>
+            </children>
+            <padding>
+                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+            </padding>
+        </VBox>
+    </top>
+
+    <center>
+        <HBox spacing="10.0">
+            <children>
+                <Pane fx:id="graphPane" prefHeight="400.0" prefWidth="500.0" style="-fx-background-color: #f0f0f0; -fx-border-color: black;" />
+
+                <VBox spacing="10.0" prefWidth="300.0">
+                    <children>
+                        <Label text="Results:" />
+                        <TextArea fx:id="txtResult" prefHeight="300.0" editable="false" />
+                        <Label fx:id="lblTotalWeight" text="Peso Total: -" />
+                    </children>
+                </VBox>
+            </children>
+            <padding>
+                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+            </padding>
+        </HBox>
+    </center>
+</BorderPane>
+        ```
